@@ -1,0 +1,80 @@
+.hero-section {
+  padding: 7rem 0 6rem;
+}
+
+.hero-text-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.primary-heading {
+  max-width: 20ch;
+  font-size: clamp(1.75rem, 4.5vw, 3.25rem);
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.hero-btn:any-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background-color: #990f1b;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
+.hero-image-wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.hero-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+.category-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.category-box > span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.sea {
+  background-image: linear-gradient(rgb(0, 38, 33, 0.6), rgb(0, 38, 33, 0.6)), url("/assets/images/sea.avif");
+}
+
+.mountain {
+  background-image: linear-gradient(rgb(0, 38, 33, 0.6), rgb(0, 38, 33, 0.6)), url("/assets/images/mountain.jpg");
+}
+
+.historical {
+  background-image: linear-gradient(rgb(0, 38, 33, 0.6), rgb(0, 38, 33, 0.6)), url("/assets/images/historical.jpg");
+}
+
+.urban {
+  background-image: linear-gradient(rgb(0, 38, 33, 0.6), rgb(0, 38, 33, 0.6)), url("/assets/images/urban.jpg");
+}

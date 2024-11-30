@@ -1,0 +1,116 @@
+.package-card-section {
+  padding: 7rem 0 6rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+
+.rounded-2 {
+  border-radius: 8px;
+}
+
+.card-wrapper:has(> .rounded-2)::before {
+  border-radius: 6px;
+}
+
+.card-wrapper {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.package-card {
+  background-color: #ffffff;
+  border-left: 2px solid #eb636e;
+  border-top: 1px solid rgb(78, 78, 78, 0.6);
+  border-right: 1px solid rgb(78, 78, 78, 0.6);
+  border-bottom: 2px solid #eb636e;
+  z-index: 700;
+  transition: 150ms ease-out;
+  overflow: hidden;
+}
+
+.card-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eb636e;
+  z-index: -1;
+  transition: 150ms ease-out;
+}
+
+.package-card:hover {
+  transform: translate(5px, -5px);
+}
+
+.card-container:hover::before {
+  transform: translate(-3px, 3px);
+}
+
+.card-text-wrapper {
+  padding: 18px 24px;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.card-description {
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+.package-card-image {
+  aspect-ratio: 16 / 10;
+  height: 100%;
+  width: 100%;
+}
+
+.prices-wrapper {
+  margin-bottom: 1.2rem;
+}
+
+.prices-wrapper > p {
+  margin-bottom: 0.25rem;
+}
+
+.price-kids,
+.price-adults {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.card-button:any-link {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.1px;
+  background-color: #b01724;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 39em) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2.5rem;
+  }
+}
